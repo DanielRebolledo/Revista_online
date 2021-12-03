@@ -1,28 +1,38 @@
 .menu {
     width: 960px;
-    padding: 10px;
-    border-bottom: 1px solid gray
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb($grey, 0.2);
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .logo {
-    font-size: 24px;
+    color: $black;
+    font-size: $font-h1;
+    font-family: 'Source Serif Pro', serif;
     font-weight: bold;
-    text-transform: uppercase;
-    display: inline-block;
+    letter-spacing: 6px;
+    display: block;
+    
+
 }
 
-.nav {
-    display: inline-block;
+.navbar {
+    display: block;
     width: 840px;
     text-align: right;
+    
+
+    & ul li{
+        display: inline-block;
+        margin: 0 15px;
+    }
 }
 
 
 
-.nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-}
+
 
 .input-menu {
     border-radius: 30px;

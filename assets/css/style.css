@@ -1,37 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap");
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Source Serif Pro', serif; */
 body {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.5625em;
+  color: #000000;
+}
+
+h2 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.25em;
+  color: #000000;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125em;
+  color: #5d5d5d;
+}
+
+p, a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #5d5d5d;
+}
+
+a {
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
 }
 
 .menu {
   width: 960px;
-  padding: 10px;
-  border-bottom: 1px solid gray;
+  padding: 30px 0px;
+  border-bottom: 1px solid rgba(93, 93, 93, 0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .logo {
-  font-size: 24px;
+  color: #000000;
+  font-size: 1.5625em;
+  font-family: "Source Serif Pro", serif;
   font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
+  letter-spacing: 6px;
+  display: block;
 }
 
-.nav {
-  display: inline-block;
+.navbar {
+  display: block;
   width: 840px;
   text-align: right;
 }
-
-.nav ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
+.navbar ul li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .input-menu {
@@ -56,7 +97,7 @@ body {
 .noticia {
   width: 210px;
   display: inline-block;
-  margin: 5px;
+  margin: 0px 5px 50px 5px;
   cursor: pointer;
 }
 
@@ -82,17 +123,18 @@ body {
 .tags {
   border-bottom: 1px solid gray;
 }
-
-.tags ul {
+.tags__list {
+  display: flex;
+  text-align: center;
   padding: 0;
   list-style: none;
 }
-
-.tags ul li {
-  padding: 2px 4px;
-  background-color: steelblue;
-  margin-right: 1px;
+.tags__list li {
+  padding: 3px 5px;
+  background-color: #006FF2;
+  margin: 2px;
   color: white;
+  border-radius: 5px;
 }
 
 .noticias-destacadas {

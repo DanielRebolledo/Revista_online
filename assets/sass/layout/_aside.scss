@@ -10,19 +10,26 @@
 
 .tags {
     border-bottom: 1px solid gray;
+
+    &__list {
+        display: flex;
+        text-align: center;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list li {
+        padding: 3px 5px;
+        background-color: $blue;
+        margin: 2px;
+        color: white;
+        border-radius: 5px;
+    }
 }
 
-.tags ul {
-    padding: 0;
-    list-style: none;
-}
 
-.tags ul li {
-    padding: 2px 4px;
-    background-color: steelblue;
-    margin-right: 1px;
-    color: white;
-}
+
+
 
 .noticias-destacadas {
     margin-bottom: 50px;
