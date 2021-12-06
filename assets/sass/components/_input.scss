@@ -1,0 +1,10 @@
+.input{
+padding: 5px;
+ border: 1px solid $grey;
+}
+
+@media (max-width: 540px) {
+    .input{
+        display: none;
+    }
+ }

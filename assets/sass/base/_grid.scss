@@ -1,0 +1,29 @@
+//contenedor del header y del footer
+.contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contenedor--grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+
+@media (max-width: 720px) {
+    .contenedor--grid{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+ }
+
+ @media (max-width: 540px) {
+    .contenedor--grid{
+        grid-template-columns: 100% 0%;
+    }
+ }

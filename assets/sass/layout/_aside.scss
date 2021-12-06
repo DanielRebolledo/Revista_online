@@ -1,11 +1,9 @@
-.listado-izquierdo {
-    width: 220px;
-    float: right;
-}
+
 
 .cabecera-listado {
     width: 220px;
     border-bottom: 1px solid gray;
+    width: 100%;
 }
 
 .tags {
@@ -13,29 +11,38 @@
 
     &__list {
         display: flex;
+        justify-content: space-between;
         text-align: center;
         padding: 0;
         list-style: none;
     }
 
     &__list li {
-        padding: 3px 5px;
+        padding: 8px 10px;
         background-color: $blue;
         margin: 2px;
         color: white;
         border-radius: 5px;
+        font-size: 12px;
     }
 }
 
-
-
-
+.fas{
+    margin: 0px 3px;
+}
 
 .noticias-destacadas {
     margin-bottom: 50px;
 }
 
 .noticias-destacadas img {
-    width: 220px;
+    /* width: 220px; */
     height: 200px;
 }
+
+
+@media (max-width: 540px) {
+    .aside{
+        display: none;
+    }
+ }
